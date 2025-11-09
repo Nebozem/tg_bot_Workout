@@ -1,8 +1,5 @@
-from dotenv import load_dotenv
 import os
+from dotenv import load_dotenv
 
-env_path = os.path.join(os.path.dirname(__file__), "config.env")
-load_dotenv(dotenv_path=env_path)
-
+load_dotenv("config.env")
 BOT_TOKEN = os.getenv("BOT_TOKEN")
-print("BOT_TOKEN:", BOT_TOKEN)

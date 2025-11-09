@@ -1,18 +1,176 @@
 {
   "program_1": {
-    "days": [
-      {
-        "name": "День 1: Грудь и бицепс",
-        "exercises": ["Жим лёжа", "Сгибания на бицепс", "Отжимания"]
-      }
+    "1": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "2": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "3": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "4": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "5": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "6": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "7": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "8": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "9": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "10": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "11": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "12": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "13": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "14": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "15": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "16": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "17": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
     ]
   },
   "program_2": {
-    "days": [
-      {
-        "name": "День 1: Ноги",
-        "exercises": ["Приседания", "Выпады", "Становая тяга"]
-      }
+    "1": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "2": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "3": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "4": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "5": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "6": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "7": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "8": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "9": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "10": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "11": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "12": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "13": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "14": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "15": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "16": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "17": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
     ]
   }
 }

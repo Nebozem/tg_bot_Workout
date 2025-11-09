@@ -1,21 +1,26 @@
 import asyncio
 from aiogram import Bot, Dispatcher
-from aiogram.client.bot import DefaultBotProperties
+from aiogram.client.session.aiohttp import AiohttpSession
 from config import BOT_TOKEN
-from handlers.main import router
+from db.db_helper import init_db
+from handlers import programs, weights, navigation
 
 async def main():
-    # создаём объект с настройками по умолчанию
-    default_props = DefaultBotProperties(parse_mode="HTML")
+    init_db()
 
-    # создаём бот с default_props
-    bot = Bot(token=BOT_TOKEN, default=default_props)
+    session = AiohttpSession()
+    bot = Bot(token=BOT_TOKEN, session=session)
+
     dp = Dispatcher()
-    dp.include_router(router)
+    dp.include_router(programs.router)
+    dp.include_router(weights.router)
+    dp.include_router(navigation.router)
 
     print("Бот запущен...")
-    await dp.start_polling(bot)
+    try:
+        await dp.start_polling(bot)
+    finally:
+        await bot.session.close()
 
 if __name__ == "__main__":
     asyncio.run(main())
-а
