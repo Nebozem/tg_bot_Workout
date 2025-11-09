@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac2eb12e-8dba-4105-aef6-1b766820f321" name="Changes" comment="Второй коммит">
-      <change afterPath="$PROJECT_DIR$/db/db_helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/navigation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/programs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/weights.py" afterDir="false" />
+    <list default="true" id="ac2eb12e-8dba-4105-aef6-1b766820f321" name="Changes" comment="Работают переключения между весами, но пока не кидает на след/пред день">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/programs.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/programs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/navigation.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/navigation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/weights.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/weights.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,44 +24,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;Nebozem&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Nebozem/tg_bot_Workout.git&quot;,
-    &quot;accountId&quot;: &quot;721ece56-a8e3-4166-9a68-511119b5cc32&quot;
-  }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
-}</component>
-  <component name="ProjectId" id="35D9dIaydQ1RaB9nQ5AAX9w2juT" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="35FAQRgnQYGBe0wEYQlFP6kwNbN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.bot.executor": "Run",
-    "Python.config.executor": "Run",
-    "Python.main.executor": "Run",
+    "Python.path.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "sqlite-feature",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+    "git-widget-placeholder": "sqlite-feature"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\PycharmProjects\tg_bot_workout" />
-    </key>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -77,45 +51,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ac2eb12e-8dba-4105-aef6-1b766820f321" name="Changes" comment="" />
-      <created>1762633860188</created>
+      <changelist id="ac2eb12e-8dba-4105-aef6-1b766820f321" name="Changes" comment="Работают переключения между весами, но пока не кидает на след/пред день" />
+      <created>1762695431493</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1762633860188</updated>
+      <updated>1762695431493</updated>
     </task>
-    <task id="LOCAL-00001" summary="Первый коммит">
-      <option name="closed" value="true" />
-      <created>1762634651357</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1762634651357</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Второй коммит">
-      <option name="closed" value="true" />
-      <created>1762681904552</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1762681904552</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Первый коммит" />
-    <MESSAGE value="Второй коммит" />
-    <option name="LAST_COMMIT_MESSAGE" value="Второй коммит" />
   </component>
 </project>
