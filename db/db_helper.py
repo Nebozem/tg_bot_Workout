@@ -38,3 +38,15 @@ def get_last_weight(user_id: int, exercise: str):
     row = cursor.fetchone()
     conn.close()
     return row[0] if row else 0
+
+def get_weight_history(user_id: int, exercise: str):
+    """Получает всю историю весов для упражнения"""
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute(
+        "SELECT weight, date FROM weights WHERE user_id=? AND exercise=? ORDER BY date DESC",
+        (user_id, exercise)
+    )
+    history = cursor.fetchall()
+    conn.close()
+    return history

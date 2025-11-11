@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac2eb12e-8dba-4105-aef6-1b766820f321" name="Changes" comment="Работают переключения между весами, но пока не кидает на след/пред день">
+    <list default="true" id="ac2eb12e-8dba-4105-aef6-1b766820f321" name="Changes" comment="Работают переключения между весами, кидает на след/пред день. Далее в планах добавить историю прогрессии, отредактировать json и добавить картинки упражнений.">
+      <change afterPath="$PROJECT_DIR$/data/programs_2.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/programs.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/programs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/db_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/db_helper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handlers/navigation.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/navigation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handlers/weights.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/weights.py" afterDir="false" />
     </list>
@@ -24,9 +27,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Nebozem&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Nebozem/tg_bot_Workout.git&quot;,
+    &quot;accountId&quot;: &quot;721ece56-a8e3-4166-9a68-511119b5cc32&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="35FAQRgnQYGBe0wEYQlFP6kwNbN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,7 +54,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "sqlite-feature"
+    "git-widget-placeholder": "sqlite-feature",
+    "last_opened_file_path": "C:/Users/Admin/PycharmProjects/tg_bot_workout"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -57,6 +73,19 @@
       <option name="presentableId" value="Default" />
       <updated>1762695431493</updated>
     </task>
+    <task id="LOCAL-00001" summary="Работают переключения между весами, кидает на след/пред день. Далее в планах добавить историю прогрессии, отредактировать json и добавить картинки упражнений.">
+      <option name="closed" value="true" />
+      <created>1762697351873</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1762697351873</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Работают переключения между весами, кидает на след/пред день. Далее в планах добавить историю прогрессии, отредактировать json и добавить картинки упражнений." />
+    <option name="LAST_COMMIT_MESSAGE" value="Работают переключения между весами, кидает на след/пред день. Далее в планах добавить историю прогрессии, отредактировать json и добавить картинки упражнений." />
   </component>
 </project>
