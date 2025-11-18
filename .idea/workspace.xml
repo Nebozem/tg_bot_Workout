@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac2eb12e-8dba-4105-aef6-1b766820f321" name="Changes" comment="Близится релиз. Бот функционирует почти идеально, можно добавить выбор конкретного дня с самого старта. Проверки на ввод значений вне индекса. JSON готов на 9/34">
-      <change afterPath="$PROJECT_DIR$/data/programs_2.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/programs.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/programs.json" afterDir="false" />
     </list>
@@ -86,8 +85,27 @@
       <option name="project" value="LOCAL" />
       <updated>1762892954486</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Близится релиз. Бот функционирует почти идеально, можно добавить выбор конкретного дня с самого старта. Проверки на ввод значений вне индекса. JSON готов на 9/34">
+      <option name="closed" value="true" />
+      <created>1763498569032</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1763498569032</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Работают переключения между весами, кидает на след/пред день. Далее в планах добавить историю прогрессии, отредактировать json и добавить картинки упражнений." />
