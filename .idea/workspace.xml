@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac2eb12e-8dba-4105-aef6-1b766820f321" name="Changes" comment="Работают переключения между весами, кидает на след/пред день. Далее в планах добавить историю прогрессии, отредактировать json и добавить картинки упражнений.">
+    <list default="true" id="ac2eb12e-8dba-4105-aef6-1b766820f321" name="Changes" comment="Близится релиз. Бот функционирует почти идеально, можно добавить выбор конкретного дня с самого старта. Проверки на ввод значений вне индекса. JSON готов на 9/34">
       <change afterPath="$PROJECT_DIR$/data/programs_2.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/programs.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/programs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/db_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/db_helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/navigation.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/navigation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/weights.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/weights.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,17 +44,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.bot.executor": "Run",
-    "Python.path.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "sqlite-feature",
-    "last_opened_file_path": "C:/Users/Admin/PycharmProjects/tg_bot_workout"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.bot.executor&quot;: &quot;Run&quot;,
+    &quot;Python.path.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;sqlite-feature&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/PycharmProjects/tg_bot_workout&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -81,11 +78,20 @@
       <option name="project" value="LOCAL" />
       <updated>1762697351873</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Близится релиз. Бот функционирует почти идеально, можно добавить выбор конкретного дня с самого старта. Проверки на ввод значений вне индекса. JSON готов на 9/34">
+      <option name="closed" value="true" />
+      <created>1762892954486</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1762892954486</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Работают переключения между весами, кидает на след/пред день. Далее в планах добавить историю прогрессии, отредактировать json и добавить картинки упражнений." />
-    <option name="LAST_COMMIT_MESSAGE" value="Работают переключения между весами, кидает на след/пред день. Далее в планах добавить историю прогрессии, отредактировать json и добавить картинки упражнений." />
+    <MESSAGE value="Близится релиз. Бот функционирует почти идеально, можно добавить выбор конкретного дня с самого старта. Проверки на ввод значений вне индекса. JSON готов на 9/34" />
+    <option name="LAST_COMMIT_MESSAGE" value="Близится релиз. Бот функционирует почти идеально, можно добавить выбор конкретного дня с самого старта. Проверки на ввод значений вне индекса. JSON готов на 9/34" />
   </component>
 </project>

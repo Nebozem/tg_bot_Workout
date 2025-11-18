@@ -1,0 +1,290 @@
+{
+  "program_1": {
+    "1": [{
+        "type": "single",
+        "name": "Шаги выпадами либо поочерёдные шаги назад",
+        "default_weight": 0,
+        "sets": "1x20 без веса и 3x12 на 100%"
+      },
+      {
+        "type": "single",
+        "name": "Наклоны с гантелями в руках, стоя на одной ноге",
+        "default_weight": 0,
+        "sets": "3x10 на 100%"
+      },
+      {
+        "type": "superset",
+        "name": "Супер-сет: Ноги и пуловер",
+        "exercises": [
+          {"name": "Жим ногами", "default_weight": 0, "sets": "20 разминочных и 4x12 на 100%"},
+          {"name": "Пуловер с гантелью", "default_weight": 0, "sets": "20 разминочных и 4x12 на 100%"}
+        ]
+      },
+      {
+        "type": "single",
+        "name": "Жим гантелей на наклонной скамье",
+        "default_weight": 0,
+        "sets": "4x8-10 на 100%"
+      },
+      {
+        "type": "single",
+        "name": "Пресс. Подъём ног в висе до отказа",
+        "default_weight": 0,
+        "sets": "4xMAX, 30 сек отдых"
+      },
+      {
+        "type": "cardio",
+        "name": "Кардио. Бег 4 км или любой аналогичный по трудозатратам вариант. Уровень пульса - 80-85% от максимума"
+      }
+    ],
+    "2": [{
+        "type": "single",
+        "name": "Тяга сверху широким хватом",
+        "default_weight": 0,
+        "sets": "1x15 на 70% и 4x8-10 на 100%"
+      },
+      {
+        "type": "single",
+        "name": "Тяга сверху узким хватом",
+        "default_weight": 0,
+        "sets": "1x15 на 70% и 4x8-10 на 100%"
+      },
+      {
+        "type": "single",
+        "name": "Тяга сидя к животу",
+        "default_weight": 0,
+        "sets": "1x12-15 на 80-90% и 4x7-8 на 100%"
+      },
+      {
+        "type": "superset",
+        "name": "Супер-сет: Гантели стоя и через сторону",
+        "exercises": [
+          {"name": "Жим одной гантели стоя", "default_weight": 0, "sets": "4x8-10 каждой рукой на 100%"},
+          {"name": "Подъём гантели через сторону стоя", "default_weight": 0, "sets": "4x10-12 каждой рукой 100%"}
+        ]
+      },
+      {
+        "type": "single",
+        "name": "Подъём гантели через сторону в наклоне",
+        "default_weight": 0,
+        "sets": "3x10-12 на 100%"
+      },
+      {
+        "type": "superset",
+        "name": "Супер-сет: Пресс и гиперэкстензия",
+        "exercises": [
+          {"name": "Перекрёстные скручивания в динамике", "default_weight": 0, "sets": "3x30"},
+          {"name": "Гиперэкстензия", "default_weight": 0, "sets": "3x12-15"}
+        ]
+      },
+      {
+        "type": "cardio",
+        "name": "Кардио. Бег 4 км или любой аналогичный по трудозатратам вариант. Уровень пульса - 80-85% от максимума"
+      }
+    ],
+    "3": [
+      {
+        "type": "superset",
+        "name": "Супер-сет: Бицепс и трицепс",
+        "exercises": [
+          {"name": "Подъём штанги на бицепс стоя", "default_weight": 0, "sets": "15 на 70% и 4x8-10 на 100%"},
+          {"name": "Жим штанги узким хватом", "default_weight": 0, "sets": "15 на 70% и 4x8-10 на 100%"}
+        ]
+      },
+      {
+        "type": "superset",
+        "name": "Золотой гигантский сет",
+        "exercises": [
+          {"name": "Подъём гантелей на бицепс стоя", "default_weight": 0, "sets": "4x10 на 100% каждой рукой"},
+          {"name": "Французский жим гантелей лёжа", "default_weight": 0, "sets": "4 подхода до отказа, тот же вес"},
+          {"name": "Подъём на бицепс лёжа на горизонтальной скамье", "default_weight": 0, "sets": "4x6(минимум) на 100%, можно меньший вес"},
+          {"name": "Кикбеки с гантелями стоя", "default_weight": 0, "sets": "4 подхода до отказа с основным весом"}
+        ]
+      },
+      {
+        "type": "superset",
+        "name": "Супер-сет: Ноги",
+        "exercises": [
+          {"name": "Сгибания ног в тренажёре", "default_weight": 0, "sets": "4x12-15 на 100%"},
+          {"name": "Разгибания ног в тренажёре", "default_weight": 0, "sets": "4x12-15 на 100%"}
+        ]
+      },
+      {
+        "type": "superset",
+        "name": "Супер-сет: Ноги",
+        "exercises": [
+          {"name": "Разведение ног в тренажёре", "default_weight": 0, "sets": "3x15 на 100%"},
+          {"name": "Сведение ног в тренажёре", "default_weight": 0, "sets": "3x15 на 100%"}
+        ]
+      },
+      {
+        "type": "single",
+        "name": "Икры",
+        "default_weight": 0,
+        "sets": "15, 8, 6, 6, 6, 6, 6 на 100% по 15 секунд перерыв"
+      },
+      {
+        "type": "cardio",
+        "name": "Кардио - отдых"
+      }
+    ],
+    "4": [
+      {
+        "type": "cardio",
+        "name": "Интервальное кардио.\n5 мин - спокойный бег. 20-30 сек ускорение.\n4 мин - спокойный бег. 20-30 сек - ускорение.\n4 мин - спокойный бег. 20-30 сек - ускорение.\n4 мин - спокойный бег. 20-30 сек - ускорение.\n4 мин - спокойный бег. 20-30 сек - ускорение.\n4 мин - спокойный бег. 20-30 сек - ускорение.\n5 мин - спокойный бег, заминка"
+      }
+    ],
+    "5": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "6": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "7": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "8": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "9": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "10": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "11": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "12": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "13": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "14": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "15": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "16": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "17": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ]
+  },
+  "program_2": {
+    "1": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "2": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "3": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "4": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "5": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "6": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "7": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "8": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "9": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "10": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "11": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "12": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "13": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "14": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "15": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ],
+    "16": [
+      {"name": "Приседания", "default_weight": 0},
+      {"name": "Жим лежа", "default_weight": 0},
+      {"name": "Тяга штанги в наклоне", "default_weight": 0}
+    ],
+    "17": [
+      {"name": "Становая тяга", "default_weight": 0},
+      {"name": "Подтягивания", "default_weight": 0},
+      {"name": "Армейский жим", "default_weight": 0}
+    ]
+  }
+}
