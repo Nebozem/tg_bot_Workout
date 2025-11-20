@@ -12,8 +12,7 @@ def get_program_kb():
     kb = types.ReplyKeyboardMarkup(
         keyboard=[
             [types.KeyboardButton(text="Программа 1")],
-            [types.KeyboardButton(text="Программа 2")],
-            [types.KeyboardButton(text="Выбрать день по номеру")]
+            [types.KeyboardButton(text="Программа 2")]
         ],
         resize_keyboard=True
     )
