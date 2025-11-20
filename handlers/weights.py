@@ -327,3 +327,36 @@ async def start_day_workout(user_id: int, program: str, day: int, message: types
         "superset_index": 0
     }
     await show_exercise(user_id, message)
+
+@router.message(lambda m: m.text and m.text.isdigit())
+async def handle_day_number_input(message: types.Message):
+    """Обрабатывает ввод номера дня напрямую"""
+    user_id = message.from_user.id
+    state = user_state.get(user_id)
+    
+    if not state:
+        await message.answer("Сначала выберите программу (/start)")
+        return
+    
+    try:
+        day_number = int(message.text)
+    except ValueError:
+        await message.answer("Пожалуйста, введите число")
+        return
+
+    program_days = list(programs_data[state["program"]].keys())
+    
+    # Проверяем, существует ли такой день
+    if str(day_number) not in program_days:
+        max_day = max(map(int, program_days))
+        await message.answer(f"День {day_number} не найден. Введите номер от 1 до {max_day}")
+        return
+
+    # Устанавливаем выбранный день
+    state["day"] = day_number
+    state["exercise_index"] = 0
+    state["superset_index"] = 0
+    
+    await message.answer(f"Переходим к дню {day_number}...")
+    await show_exercise(user_id, message)
+
