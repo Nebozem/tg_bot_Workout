@@ -59,7 +59,7 @@ tg_bot_Workout/
 ### Локально
 
 # Клонировать репозиторий
-git clone https://github.com/yourusername/tg_bot_Workout.git
+git clone https://github.com/Nebozem/tg_bot_Workout
 cd tg_bot_Workout
 
 # Создать виртуальное окружение
@@ -92,8 +92,9 @@ sudo systemctl daemon-reload
 sudo systemctl enable fitness-bot.service
 sudo systemctl start fitness-bot.service
 
-Формат programs.json
-json
+## 📄 Формат `programs.json`
+
+```json
 {
   "program_1": {
     "1": [
@@ -107,8 +108,16 @@ json
         "type": "superset",
         "name": "Супер-сет: Ноги и пуловер",
         "exercises": [
-          {"name": "Жим ногами", "default_weight": 0, "sets": "4x12"},
-          {"name": "Пуловер с гантелью", "default_weight": 0, "sets": "4x12"}
+          {
+            "name": "Жим ногами",
+            "default_weight": 0,
+            "sets": "4x12"
+          },
+          {
+            "name": "Пуловер с гантелью",
+            "default_weight": 0,
+            "sets": "4x12"
+          }
         ]
       },
       {
@@ -118,6 +127,7 @@ json
     ]
   }
 }
+```
 
 ## Управление ботом
 
