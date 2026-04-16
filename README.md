@@ -36,23 +36,24 @@ Telegram-бот для отслеживания тренировок, прогр
 
 ## 📁 Структура проекта
 tg_bot_Workout/
-├── bot.py # Точка входа
-├── workout_bot.py # Альтернативная точка входа (для systemd)
-├── config.py # Конфигурация
-├── config.env # Токен бота (не в git)
-├── requirements.txt # Зависимости
+│
+├── bot.py                 # Точка входа
+├── workout_bot.py         # Альтернативная точка входа (для systemd)
+├── config.py              # Конфигурация
+├── config.env             # Токен бота (не в git)
+├── requirements.txt       # Зависимости
 │
 ├── data/
-│ ├── programs.json # Тренировочные программы
-│ └── db.sqlite # База данных SQLite
+│   ├── programs.json      # Тренировочные программы
+│   └── db.sqlite          # База данных SQLite
 │
 ├── db/
-│ └── db_helper.py # Функции работы с БД
+│   └── db_helper.py       # Функции работы с БД
 │
 └── handlers/
-├── navigation.py # Навигация по дням
-├── programs.py # Выбор программ
-└── weights.py # Упражнения, веса, статистика
+    ├── navigation.py      # Навигация по дням
+    ├── programs.py        # Выбор программ
+    └── weights.py         # Упражнения, веса, статистика
 
 ## 📦 Установка и запуск
 
