@@ -36,21 +36,23 @@ Telegram-бот для отслеживания тренировок, прогр
 
 ## 📁 Структура проекта
 
+```
 tg_bot_Workout/
-├── bot.py              # Точка входа
-├── workout_bot.py     # Основная логика бота
-├── config.py          # Конфигурация
-├── config.env         # Переменные окружения
-├── requirements.txt   # Зависимости
+├── bot.py
+├── workout_bot.py
+├── config.py
+├── config.env
+├── requirements.txt
 ├── data/
-│   └── programs.json  # Данные программ тренировок
-├── db.sqlite          # База данных
+│   └── programs.json
+├── db.sqlite
 ├── db/
-│   └── db_helper.py   # Работа с БД
+│   └── db_helper.py
 ├── handlers/
-│   ├── navigation.py  # Навигация
-│   ├── programs.py    # Логика программ
-│   └── weights.py     # Работа с весами
+│   ├── navigation.py
+│   ├── programs.py
+│   └── weights.py
+```
 
 ## 📦 Установка и запуск
 
