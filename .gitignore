@@ -63,7 +63,6 @@ db.sqlite3-journal
 
 # Local bot files
 config.env
-data/db.sqlite
 bot.log
 .venv/
 
@@ -214,6 +213,4 @@ __marimo__/
 
 # Bot-specific
 config.env
-data/db.sqlite
-data/*.sqlite
 bot.log
