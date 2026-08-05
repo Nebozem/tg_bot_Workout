@@ -1,171 +1,199 @@
-![Python](https://img.shields.io/badge/Python-3.11-blue)
-![Aiogram](https://img.shields.io/badge/Aiogram-3.x-green)
-![SQLite](https://img.shields.io/badge/SQLite-3-blue)
-
 # tg_bot_Workout
 
-Telegram-бот для отслеживания тренировок, прогресса весов и выполнения программ с поддержкой супер-сетов и кардио.
+Telegram-бот для ведения силовых тренировок по готовым программам.  
+Хранит рабочие веса по упражнениям, показывает статистику прогресса, поддерживает супер-сеты и кардио-блоки.
 
-## 📋 Функционал
+> Да, выбор дня по номеру реализован в `handlers/weights.py`: кнопка `Выбрать день по номеру` выводит запрос на ввод номера дня и переводит пользователя на выбранный день.
 
-- 📅 **Тренировочные программы** — предустановленные программы с днями и упражнениями
-- 💪 **Супер-сеты** — поддержка групповых упражнений
-- 🏃 **Кардио** — отдельный тип заданий
-- 📊 **Статистика весов** — история прогресса по каждому упражнению
-- 💾 **Сохранение результатов** — все рабочие веса хранятся в БД
-- 🧭 **Навигация** — переход между днями, повтор дня, выбор дня по номеру
+## Что есть в проекте
 
-Ниже приведён пример использования бота в Telegram на Android.
+- 2 программы тренировок (`data/programs.json`)
+- Выбор дня после выбора программы
+- Навигация по упражнениям, дням и супер-сетам
+- Ввод и сохранение рабочих весов (SQLite)
+- Статистика по каждому упражнению
+- Команда `/reset` — сброс текущей сессии
 
-## Скриншоты использования
+## Стек
 
-# Шаг 1 — Выбор программы, переход между упражнениями, установка веса
+- Python 3.10+
+- [aiogram](https://docs.aiogram.dev/) 3.x
+- SQLite
 
-<img width="1080" height="2171" alt="1000022802" src="https://github.com/user-attachments/assets/0f9b1890-0375-42fa-9c92-509137f6065f" />
-
-# Шаг 2 — Выбор дня по номеру
-
-<img width="1080" height="2159" alt="1000022804" src="https://github.com/user-attachments/assets/80044f8a-7246-4cc9-8d38-8e82f75972c7" />
-
-# Шаг 3 — Просмотр статистики по упражнению
-
-<img width="1080" height="2169" alt="1000022806" src="https://github.com/user-attachments/assets/4e3f9059-0001-403f-939c-35a94e898d7d" />
-
-## 🛠 Технологический стек
-
-| Технология | Назначение |
-|------------|------------|
-| Python 3.11+ | Основной язык |
-| Aiogram 3.x | Асинхронный фреймворк для Telegram Bot API |
-| Aiohttp | Асинхронный HTTP клиент |
-| SQLite | Хранение весов и истории тренировок |
-| JSON | Конфигурация тренировочных программ |
-| asyncio | Асинхронное выполнение |
-| python-dotenv | Управление переменными окружения |
-
-### DevOps и деплой
-- **Linux (Ubuntu 24.04)** — серверная платформа
-- **Systemd** — автозапуск и управление процессом
-- **SSH** — удаленное управление
-- **Git** — контроль версий
-
-## 📁 Структура проекта
+## Структура проекта
 
 ```
 tg_bot_Workout/
-├── bot.py
-├── workout_bot.py
-├── config.py
-├── config.env
+├── bot.py                 # точка входа
+├── check_bot.py           # проверка подключения к Telegram
+├── config.py              # загрузка BOT_TOKEN
+├── config.env.example     # шаблон конфигурации
 ├── requirements.txt
 ├── data/
-│   └── programs.json
-├── db.sqlite
+│   ├── programs.json      # программы тренировок
+│   └── db.sqlite          # БД (не в git, создаётся локально)
 ├── db/
-│   └── db_helper.py
+│   └── db_helper.py       # работа с SQLite
 ├── handlers/
-│   ├── navigation.py
-│   ├── programs.py
-│   └── weights.py
+│   ├── programs.py        # выбор программы
+│   ├── weights.py         # упражнения, веса, статистика
+│   └── navigation.py      # переход между днями
+└── scripts/
+    └── backup_db.sh       # ежедневный бэкап БД
 ```
 
-## 📦 Установка и запуск
+## Установка на Raspberry Pi
 
-### Локально
+### 1. Установите системные зависимости
 
-# Клонировать репозиторий
-git clone https://github.com/Nebozem/tg_bot_Workout
-cd tg_bot_Workout
+```bash
+sudo apt update
+sudo apt install -y python3 python3-venv python3-pip git
+```
 
-# Создать виртуальное окружение
-python3 -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+### 2. Скопируйте проект на Raspberry Pi
 
-# Установить зависимости
+Если репозиторий уже есть на Raspberry Pi, перейдите в папку проекта. В противном случае передайте проект через `scp`, `rsync` или USB-накопитель.
+
+Пример с `scp`:
+
+```bash
+scp -r user@vps:/path/to/tg_bot_Workout ~/projects/tg_bot_Workout
+```
+
+```bash
+cd ~/projects/tg_bot_Workout
+```
+
+### 3. Настройте виртуальное окружение
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
+```
 
-# Создать config.env с токеном бота
-echo "BOT_TOKEN=your_telegram_bot_token" > config.env
+### 4. Создайте `config.env`
 
-# Запустить бота
-python3 bot.py
+```bash
+cp config.env.example config.env
+nano config.env
+```
 
-На VPS (Beget / Ubuntu)
-bash
-# Загрузить проект
-scp -r tg_bot_Workout botadmin@your-server:/home/botadmin/projects/
+Добавьте токен бота:
 
-# На сервере
-cd /home/botadmin/projects/tg_bot_Workout
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+```env
+BOT_TOKEN=123456789:ABCdefGHIjklMNOpqrsTUVwxyz
+```
 
-# Запуск через systemd (автозапуск)
-sudo nano /etc/systemd/system/fitness-bot.service
+### 5. Восстановление базы данных
+
+Если нужно перенести данные с VPS, используйте резервную копию из `botadmin/backups/database/db_20260801_030001.sqlite` и положите её как `data/db.sqlite` в папке проекта.
+
+```bash
+cp ../../backups/database/db_20260801_030001.sqlite data/db.sqlite
+```
+
+При первом запуске, если `data/db.sqlite` отсутствует, база создаётся автоматически.
+
+### 6. Проверка подключения к Telegram
+
+```bash
+source .venv/bin/activate
+python check_bot.py
+```
+
+### 7. Запуск бота
+
+```bash
+source .venv/bin/activate
+python bot.py
+```
+
+## Запуск как сервис systemd
+
+Создайте сервис `/etc/systemd/system/tg-bot-workout.service`:
+
+```ini
+[Unit]
+Description=Telegram Workout Bot
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/projects/tg_bot_Workout
+ExecStart=/home/pi/projects/tg_bot_Workout/.venv/bin/python bot.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Замените `User=pi` и пути при необходимости.
+
+```bash
 sudo systemctl daemon-reload
-sudo systemctl enable fitness-bot.service
-sudo systemctl start fitness-bot.service
-
-## 📄 Формат `programs.json`
-
-```json
-{
-  "program_1": {
-    "1": [
-      {
-        "type": "single",
-        "name": "Шаги выпадами",
-        "default_weight": 0,
-        "sets": "1x20 без веса и 3x12 на 100%"
-      },
-      {
-        "type": "superset",
-        "name": "Супер-сет: Ноги и пуловер",
-        "exercises": [
-          {
-            "name": "Жим ногами",
-            "default_weight": 0,
-            "sets": "4x12"
-          },
-          {
-            "name": "Пуловер с гантелью",
-            "default_weight": 0,
-            "sets": "4x12"
-          }
-        ]
-      },
-      {
-        "type": "cardio",
-        "name": "Бег 10 минут"
-      }
-    ]
-  }
-}
+sudo systemctl enable tg-bot-workout
+sudo systemctl start tg-bot-workout
+sudo systemctl status tg-bot-workout
 ```
 
-## Управление ботом
+Логи:
 
-Все действия выполняются через кнопки. Бот не требует запоминания команд.
+```bash
+journalctl -u tg-bot-workout -f
+```
 
-## 🎮 Управление ботом
+## Бэкапы базы данных
 
-Все действия выполняются через кнопки — бот не требует запоминания команд.
+Скрипт `scripts/backup_db.sh` копирует `data/db.sqlite` в `~/backups/database/` и удаляет копии старше 30 дней.
 
-| Действие | Кнопка |
-|:---------|:-------|
-Следующее упражнение | `Следующее упражнение`
-Следующее упражнение в супер-сете | `Следующее упражнение в супер-сете`
-Записать рабочий вес | `Ввести новый вес`
-Посмотреть прогресс | `📊 Посмотреть статистику по упражнению`
-Вернуться к упражнению | `↩️ Вернуться к упражнению`
-Перейти к следующему дню | `Следующий день`
-Вернуться к предыдущему дню | `Предыдущий день`
-Перейти к любому дню | `Выбрать день по номеру`
-Пройти день заново | `Повторить день`
+```bash
+chmod +x scripts/backup_db.sh
+mkdir -p ~/backups/database
+./scripts/backup_db.sh
+```
 
-> 💡 **Единственная текстовая команда:** `/start` — начать тренировку и выбрать программу.
+Переменные:
 
-## 🤖 Демо
+| Переменная        | По умолчанию                    |
+|-------------------|---------------------------------|
+| `BOT_PROJECT_DIR` | `$HOME/projects/tg_bot_Workout` |
+| `BOT_BACKUP_DIR`  | `$HOME/backups/database`        |
 
-Попробовать бота: https://t.me/Gym_prog_bot
+### Cron (ежедневно в 03:00)
+
+```cron
+0 3 * * * /home/pi/projects/tg_bot_Workout/scripts/backup_db.sh
+```
+
+## Использование бота
+
+1. `/start` — выбрать программу (Программа 1 или Программа 2)
+2. После выбора программы выбрать день:
+   - нажать `1-й день`, либо
+   - `Выбрать день по номеру`
+3. Ввести номер дня и продолжить тренировки
+4. Навигация по кнопкам: `Следующее упражнение`, `Назад`, `Следующий день`, `Предыдущий день`
+5. Ввести новый вес и сохранить его
+6. Просмотреть статистику по упражнению
+7. `/reset` — сбросить текущую сессию
+
+## Что хранить локально
+
+- `config.env` — токен бота
+- `data/db.sqlite` — локальная база данных
+- `bot.log` — локальные логи
+
+## Миграция с VPS
+
+1. Скопируйте резервную копию БД с VPS.
+2. Поместите файл в `data/db.sqlite` в проекте.
+3. Передайте `config.env` с токеном на Raspberry Pi.
+4. Запустите бота на Raspberry Pi из виртуального окружения.
+
+## Лицензия
+
+Личный проект. Используйте и изменяйте по своему усмотрению.
