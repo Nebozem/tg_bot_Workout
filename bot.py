@@ -11,10 +11,9 @@ async def main():
     # Инициализация БД
     init_db()
 
-    # Создание сессии с таймаутами для облака
+    # Создание сессии с таймаутом
     session = AiohttpSession(
-        timeout=30,
-        retry_delay=1
+        timeout=30
     )
 
     bot = Bot(token=BOT_TOKEN, session=session)
